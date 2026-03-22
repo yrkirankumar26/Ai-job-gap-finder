@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #1e293b;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.skillgap input,
+.skillgap select,
+.skillgap textarea,
+.skillgap button {
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #1e293b;
+}

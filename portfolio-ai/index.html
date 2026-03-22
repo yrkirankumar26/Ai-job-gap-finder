@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Skill Gap Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- PDF + DOCX LIBRARIES -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2 class="logo">AI Analyzer</h2>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#skillgap">Skill Gap</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="about" class="about">
+  <h2>About</h2>
+  <p>This tool analyzes your resume and gives a personalized learning roadmap.</p>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Project</h2>
+  <div class="project-card">
+    <h3>AI Skill Gap Analyzer</h3>
+    <p>Upload resume and get missing skills + roadmap</p>
+  </div>
+</section>
+
+<section id="skillgap" class="skillgap">
+  <h2>AI Skill Gap Finder</h2>
+
+  <input type="file" id="resumeFile" accept=".txt,.pdf,.docx" />
+
+  <select id="jobRole" onchange="updateDescription()">
+    <option value="">Select Job Role</option>
+    <option value="software">Software Engineer</option>
+    <option value="frontend">Frontend Developer</option>
+    <option value="backend">Backend Developer</option>
+    <option value="ai">AI Engineer</option>
+    <option value="data">Data Analyst</option>
+    <option value="db">Database Administrator</option>
+    <option value="cloud">Cloud Engineer</option>
+    <option value="cyber">Cybersecurity Analyst</option>
+    <option value="mobile">Mobile Developer</option>
+    <option value="qa">QA Engineer</option>
+    <option value="devops">DevOps Engineer</option>
+    <option value="uiux">UI/UX Designer</option>
+    <option value="pm">Product Manager</option>
+    <option value="ba">Business Analyst</option>
+    <option value="prompt">Prompt Engineer</option>
+  </select>
+
+  <textarea id="jobDescription" placeholder="Job description will appear here..." rows="6"></textarea>
+
+  <button onclick="analyzeSkills()">Analyze</button>
+
+  <div id="result"></div>
+</section>
+
+<footer>
+  <p>© 2026 AI Skill Gap Analyzer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
